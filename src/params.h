@@ -97,137 +97,137 @@
 #define BRACKET_CLOSE	"\x7d" //}
 
 // directories
-#define AREA_DIR        "area"DIR_SYM       // default directory of areas
-#define AREA_RIL_DIR	AREA_DIR"ril"DIR_SYM // default directory of areas room invite list
-#define BACKUP_AREA_DIR	"bak_area"DIR_SYM	// stores the previous save of an area
-#define BACKUP_AREA_RIL_DIR	BACKUP_AREA_DIR"ril"DIR_SYM	// stores the previous save of an area ril list
-#define BACKUP_HELP_DIR	"bak_help"DIR_SYM	// stores the previous save of a helpfile
-#define SYSTEM_DIR      "system"DIR_SYM     // game system parameters root directory
-#define DATA_DIR        "data"DIR_SYM       // data files
-#define HELP_DIR        "help"DIR_SYM       // default directory of helps
-#define NOTES_DIR       "notes"DIR_SYM      // notes stored in this directory
-#define PLAYER_DIR      "player"DIR_SYM     // root directory of player files
-#define SCRIPTS_DIR		"scripts"DIR_SYM	// Scripts directory
+#define AREA_DIR        "area" DIR_SYM       // default directory of areas
+#define AREA_RIL_DIR	AREA_DIR "ril" DIR_SYM // default directory of areas room invite list
+#define BACKUP_AREA_DIR	"bak_area" DIR_SYM	// stores the previous save of an area
+#define BACKUP_AREA_RIL_DIR	BACKUP_AREA_DIR "ril" DIR_SYM	// stores the previous save of an area ril list
+#define BACKUP_HELP_DIR	"bak_help" DIR_SYM	// stores the previous save of a helpfile
+#define SYSTEM_DIR      "system" DIR_SYM     // game system parameters root directory
+#define DATA_DIR        "data" DIR_SYM       // data files
+#define HELP_DIR        "help" DIR_SYM       // default directory of helps
+#define NOTES_DIR       "notes" DIR_SYM      // notes stored in this directory
+#define PLAYER_DIR      "player" DIR_SYM     // root directory of player files
+#define SCRIPTS_DIR		"scripts" DIR_SYM	// Scripts directory
 #define AUTOSTAT_DIR    SYSTEM_DIR			// where the autostat templates live
 
 // directories which aren't off the root 
-#define CLASSES_DIR     SYSTEM_DIR"classes"DIR_SYM	// classes - stats on each class
-#define DEITY_DIR		SYSTEM_DIR"deities"DIR_SYM	// deities
-#define LANGUAGES_DIR   SYSTEM_DIR"languages"DIR_SYM// languages
+#define CLASSES_DIR     SYSTEM_DIR "classes" DIR_SYM	// classes - stats on each class
+#define DEITY_DIR		SYSTEM_DIR "deities" DIR_SYM	// deities
+#define LANGUAGES_DIR   SYSTEM_DIR "languages" DIR_SYM// languages
 #define REMORT_DIR      PLAYER_DIR "remort" DIR_SYM // where pfiles goto when remorting begins
-#define SRC_DIR			"src"DIR_SYM	    // source code in this directory
+#define SRC_DIR			"src" DIR_SYM	    // source code in this directory
 
 // log directories
-#define LOG_ROOT_DIR		"logs"DIR_SYM		// root directory of all logs
-#define GAME_LOGS_DIR		LOG_ROOT_DIR"game"DIR_SYM		
-#define OLC_LOGS_DIR		LOG_ROOT_DIR"olc"DIR_SYM		// logs olc 
-#define CODE_LOGS_DIR		SRC_DIR"logs"DIR_SYM       		// code logs 
-#define ADMIN_LOGS_DIR		LOG_ROOT_DIR"admin"DIR_SYM		// default logs directory
-#define PLAYER_LOGS_DIR		LOG_ROOT_DIR"plogs"DIR_SYM		// Player logs go in here
-#define RESTRING_LOGS_DIR   LOG_ROOT_DIR"rstrlogs"DIR_SYM	// Player restring logs go in here
-#define CHANNELS_LOGS_DIR   LOG_ROOT_DIR"channels"DIR_SYM
-#define SUPPORT_LOGS_DIR	LOG_ROOT_DIR"support"DIR_SYM	
-#define IMMLOG_DIR			LOG_ROOT_DIR"immlogs"DIR_SYM	// Immortal logs 
-#define PDIR_LOCKED     PLAYER_DIR"locked"DIR_SYM	// pfiles requiring unlock code
-#define	PDIR_BUILDER	PLAYER_DIR"builder"DIR_SYM	// pfiles of those with olc access
-#define	PDIR_TRUSTED	PLAYER_DIR"trusted"DIR_SYM	// pfiles of mortals with an imm trust
-#define	PDIR_IMMORTAL	PLAYER_DIR"immortal"DIR_SYM	// immortal pfiles
-#define LOCKED_PFILES_DIR PLAYER_DIR"locked"DIR_SYM	// pfiles requiring an email unlock code
-#define RETIRED_DIR		PLAYER_DIR"retired"DIR_SYM	// manually retired pfiles
-#define DEAD_DIR        PLAYER_DIR"dead"DIR_SYM		// Pkilled Player files
-#define DELETE_DIR      PLAYER_DIR"deleted"DIR_SYM    // Players that delete above level 5
+#define LOG_ROOT_DIR		"logs" DIR_SYM		// root directory of all logs
+#define GAME_LOGS_DIR		LOG_ROOT_DIR "game" DIR_SYM
+#define OLC_LOGS_DIR		LOG_ROOT_DIR "olc" DIR_SYM		// logs olc
+#define CODE_LOGS_DIR		SRC_DIR "logs" DIR_SYM       		// code logs
+#define ADMIN_LOGS_DIR		LOG_ROOT_DIR "admin" DIR_SYM		// default logs directory
+#define PLAYER_LOGS_DIR		LOG_ROOT_DIR "plogs" DIR_SYM		// Player logs go in here
+#define RESTRING_LOGS_DIR   LOG_ROOT_DIR "rstrlogs" DIR_SYM	// Player restring logs go in here
+#define CHANNELS_LOGS_DIR   LOG_ROOT_DIR "channels" DIR_SYM
+#define SUPPORT_LOGS_DIR	LOG_ROOT_DIR "support" DIR_SYM
+#define IMMLOG_DIR			LOG_ROOT_DIR "immlogs" DIR_SYM	// Immortal logs
+#define PDIR_LOCKED     PLAYER_DIR "locked" DIR_SYM	// pfiles requiring unlock code
+#define	PDIR_BUILDER	PLAYER_DIR "builder" DIR_SYM	// pfiles of those with olc access
+#define	PDIR_TRUSTED	PLAYER_DIR "trusted" DIR_SYM	// pfiles of mortals with an imm trust
+#define	PDIR_IMMORTAL	PLAYER_DIR "immortal" DIR_SYM	// immortal pfiles
+#define LOCKED_PFILES_DIR PLAYER_DIR "locked" DIR_SYM	// pfiles requiring an email unlock code
+#define RETIRED_DIR		PLAYER_DIR "retired" DIR_SYM	// manually retired pfiles
+#define DEAD_DIR        PLAYER_DIR "dead" DIR_SYM		// Pkilled Player files
+#define DELETE_DIR      PLAYER_DIR "deleted" DIR_SYM    // Players that delete above level 5
 
 //MSP DIRECTORIES - ALL FILE NAMES USE / BECAUSE OF MSP CLIENT SPECIFICATIONS
-#define MSP_DIR			"msp"DIR_SYM // Directory all sounds are contained off - usually a link to the web url
+#define MSP_DIR			"msp" DIR_SYM // Directory all sounds are contained off - usually a link to the web url
 // below are the MSP directories which different things are held in
-#define MSP_ACTION_DIR		"action"DIR_SYM		// actions (brew, quaff etc) 
-#define MSP_COMBAT_DIR		"combat"DIR_SYM		// sounds of weapons, tripping etc
-#define MSP_MUDPROG_DIR		"mudprog"DIR_SYM	// from msptochar mudprog call
-#define MSP_ROOM_DIR		"room"DIR_SYM		// room sounds
-#define MSP_SKILLS_DIR		"skills"DIR_SYM		// skills set in sedit
-#define MSP_SPELLS_DIR		"spells"DIR_SYM		// spells set in sedit
-#define MSP_WEATHER_DIR		"weather"DIR_SYM	// sounds of weather etc
+#define MSP_ACTION_DIR		"action" DIR_SYM		// actions (brew, quaff etc)
+#define MSP_COMBAT_DIR		"combat" DIR_SYM		// sounds of weapons, tripping etc
+#define MSP_MUDPROG_DIR		"mudprog" DIR_SYM	// from msptochar mudprog call
+#define MSP_ROOM_DIR		"room" DIR_SYM		// room sounds
+#define MSP_SKILLS_DIR		"skills" DIR_SYM		// skills set in sedit
+#define MSP_SPELLS_DIR		"spells" DIR_SYM		// spells set in sedit
+#define MSP_WEATHER_DIR		"weather" DIR_SYM	// sounds of weather etc
 
 // note spools
-#define CHANGES_FILE    NOTES_DIR"chang.not"
-#define IDEA_FILE       NOTES_DIR"ideas.not"
-#define NEWS_FILE       NOTES_DIR"news.not"
-#define NOTE_FILE       NOTES_DIR"notes.not"    // For 'notes'
-#define SNOTE_FILE      NOTES_DIR"snotes.not"    // For 'snotes'
-#define ANOTE_FILE      NOTES_DIR"anotes.not"    // For 'anotes'
-#define INOTE_FILE      NOTES_DIR"inotes.not"    // For 'inotes'
-#define PKNOTE_FILE     NOTES_DIR"pknotes.not"   // For 'pknotes'
-#define MISC_FILE		NOTES_DIR"misc.not"		 // For 'misc' notes
-#define PENALTY_FILE    NOTES_DIR"penal.not"
+#define CHANGES_FILE    NOTES_DIR "chang.not"
+#define IDEA_FILE       NOTES_DIR "ideas.not"
+#define NEWS_FILE       NOTES_DIR "news.not"
+#define NOTE_FILE       NOTES_DIR "notes.not"    // For 'notes'
+#define SNOTE_FILE      NOTES_DIR "snotes.not"    // For 'snotes'
+#define ANOTE_FILE      NOTES_DIR "anotes.not"    // For 'anotes'
+#define INOTE_FILE      NOTES_DIR "inotes.not"    // For 'inotes'
+#define PKNOTE_FILE     NOTES_DIR "pknotes.not"   // For 'pknotes'
+#define MISC_FILE		NOTES_DIR "misc.not"		 // For 'misc' notes
+#define PENALTY_FILE    NOTES_DIR "penal.not"
 
 // === log files
 #define DAWNLOG_INDEX_FILE		"dawnlogs.txt"	// Appended, explaining what each log is for
-#define BAD_RESETS_FILE			ADMIN_LOGS_DIR"badreset.txt"	// Used by fix_resets
-#define HOSTS_FILE				ADMIN_LOGS_DIR"hosts.txt"		// records all the hosts
-#define MPBUG_FILE				OLC_LOGS_DIR"mpbugs.txt"		// For mudprog bugs 'mpinfo'
-#define BOUNDSBUG_FILE			CODE_LOGS_DIR"boundbug.txt"		// For boundsbug login function 
-#define BUG_FILE				CODE_LOGS_DIR"bugs.txt"			// For 'bug' and bug()
-#define INTRO_DEBUG_FILE		CODE_LOGS_DIR"introdbg.txt"
-#define MKILL_LOGFILE			OLC_LOGS_DIR"mkills.txt"		// logs mkills on pc's
-#define OLC_LOGFILE				OLC_LOGS_DIR"olc_log.txt"		// logs general olc 
-#define NTALK_LOGFILE			CHANNELS_LOGS_DIR"ntalk.txt"	// logs ntalk
-#define OOC_LOGFILE				CHANNELS_LOGS_DIR"ooc.txt"		// logs ooc 
-#define CHAT_LOGFILE			CHANNELS_LOGS_DIR"chat.txt"		// logs chat
-#define IC_LOGFILE				CHANNELS_LOGS_DIR"ic.txt"		// logs ic 
-#define CLANTALK_LOGFILE		CHANNELS_LOGS_DIR"clantalk.txt"	// logs clantalk
-#define NEWBIE_HUH_FILE			SUPPORT_LOGS_DIR"newb_huh.txt"	// records huhs level 1 gets 
-#define NEWBIE_SUPPORT_LOG_FILE SUPPORT_LOGS_DIR"nsup_log.txt"	// logs newbie support
-#define NEWBIE_LOGFILE			CHANNELS_LOGS_DIR"newbie.txt"	// logs newbietalks
-#define MOBLOG_LOGFILE			OLC_LOGS_DIR"moblog.txt"		// logs moblog_debugged mobs
-#define NO_HELP_FILE			SUPPORT_LOGS_DIR"no_help.txt"	// records missed help entries
-#define OBJ_REM_FILE			OLC_LOGS_DIR"obj_rem.log"		// rec object removed from pc
-#define MULTILOG_FILE			ADMIN_LOGS_DIR"multilog.txt"	// For multilog detection
-#define RESTRING_LOGFILE		RESTRING_LOGS_DIR"restring.log" // log restrings
-#define REMOVEDHELP_FILE		OLC_LOGS_DIR"rem_help.txt"  // records help entries that are removed
-#define SECURE_FILE				ADMIN_LOGS_DIR"secure.txt"
-#define SENDLOG_FILE			SUPPORT_LOGS_DIR"send_log.txt"
-#define SHUTDOWN_FILE			ADMIN_LOGS_DIR"shutdown.txt" // For 'shutdown'
-#define TYPO_FILE				SUPPORT_LOGS_DIR"typos.txt"    // For 'typo'
-#define EMAILADDRESSES_FILE		ADMIN_LOGS_DIR"emailadd.txt"	// email addresses for players
-#define CONNECTS_FILE			ADMIN_LOGS_DIR"connects.txt"	// host names of those connecting
-#define UPDATE_MAGIC_FILE		ADMIN_LOGS_DIR"upmagic.txt"		// records the magic update
-#define LASTON_DELETE_LOGFILE	ADMIN_LOGS_DIR"deletes.txt"		// records all the deleters details
-#define CLANBANKING_FILE		ADMIN_LOGS_DIR"clanbank.txt"	// records clan bank transactions
+#define BAD_RESETS_FILE			ADMIN_LOGS_DIR "badreset.txt"	// Used by fix_resets
+#define HOSTS_FILE				ADMIN_LOGS_DIR "hosts.txt"		// records all the hosts
+#define MPBUG_FILE				OLC_LOGS_DIR "mpbugs.txt"		// For mudprog bugs 'mpinfo'
+#define BOUNDSBUG_FILE			CODE_LOGS_DIR "boundbug.txt"		// For boundsbug login function
+#define BUG_FILE				CODE_LOGS_DIR "bugs.txt"			// For 'bug' and bug()
+#define INTRO_DEBUG_FILE		CODE_LOGS_DIR "introdbg.txt"
+#define MKILL_LOGFILE			OLC_LOGS_DIR "mkills.txt"		// logs mkills on pc's
+#define OLC_LOGFILE				OLC_LOGS_DIR "olc_log.txt"		// logs general olc
+#define NTALK_LOGFILE			CHANNELS_LOGS_DIR "ntalk.txt"	// logs ntalk
+#define OOC_LOGFILE				CHANNELS_LOGS_DIR "ooc.txt"		// logs ooc
+#define CHAT_LOGFILE			CHANNELS_LOGS_DIR "chat.txt"		// logs chat
+#define IC_LOGFILE				CHANNELS_LOGS_DIR "ic.txt"		// logs ic
+#define CLANTALK_LOGFILE		CHANNELS_LOGS_DIR "clantalk.txt"	// logs clantalk
+#define NEWBIE_HUH_FILE			SUPPORT_LOGS_DIR "newb_huh.txt"	// records huhs level 1 gets
+#define NEWBIE_SUPPORT_LOG_FILE SUPPORT_LOGS_DIR "nsup_log.txt"	// logs newbie support
+#define NEWBIE_LOGFILE			CHANNELS_LOGS_DIR "newbie.txt"	// logs newbietalks
+#define MOBLOG_LOGFILE			OLC_LOGS_DIR "moblog.txt"		// logs moblog_debugged mobs
+#define NO_HELP_FILE			SUPPORT_LOGS_DIR "no_help.txt"	// records missed help entries
+#define OBJ_REM_FILE			OLC_LOGS_DIR "obj_rem.log"		// rec object removed from pc
+#define MULTILOG_FILE			ADMIN_LOGS_DIR "multilog.txt"	// For multilog detection
+#define RESTRING_LOGFILE		RESTRING_LOGS_DIR "restring.log" // log restrings
+#define REMOVEDHELP_FILE		OLC_LOGS_DIR "rem_help.txt"  // records help entries that are removed
+#define SECURE_FILE				ADMIN_LOGS_DIR "secure.txt"
+#define SENDLOG_FILE			SUPPORT_LOGS_DIR "send_log.txt"
+#define SHUTDOWN_FILE			ADMIN_LOGS_DIR "shutdown.txt" // For 'shutdown'
+#define TYPO_FILE				SUPPORT_LOGS_DIR "typos.txt"    // For 'typo'
+#define EMAILADDRESSES_FILE		ADMIN_LOGS_DIR "emailadd.txt"	// email addresses for players
+#define CONNECTS_FILE			ADMIN_LOGS_DIR "connects.txt"	// host names of those connecting
+#define UPDATE_MAGIC_FILE		ADMIN_LOGS_DIR "upmagic.txt"		// records the magic update
+#define LASTON_DELETE_LOGFILE	ADMIN_LOGS_DIR "deletes.txt"		// records all the deleters details
+#define CLANBANKING_FILE		ADMIN_LOGS_DIR "clanbank.txt"	// records clan bank transactions
 
 // === data files 
-#define BAN_FILE        DATA_DIR"ban.txt"
-#define CLAN_FILE       DATA_DIR"clans.txt"
-#define DISABLED_FILE	DATA_DIR"disabled.txt"  // disabled commands 
-#define INTRODB_FILE	DATA_DIR"intro_db.txt"	// Introduction database
-#define LETGAINDB_FILE	DATA_DIR"letgains.txt"  // records the letgains info
-#define QUEST_FILE		DATA_DIR"quests.txt"	// quests database
-#define OFFMOOT_FILE	DATA_DIR"offmoot.txt"	// offmoot database
-#define LOCKERS_FILE	DATA_DIR"lockers.txt"	// lockers database
-#define CORPSES_FILE	DATA_DIR"corpses.txt"	// Corpses Save database ( used in hreboot etc )
+#define BAN_FILE        DATA_DIR "ban.txt"
+#define CLAN_FILE       DATA_DIR "clans.txt"
+#define DISABLED_FILE	DATA_DIR "disabled.txt"  // disabled commands
+#define INTRODB_FILE	DATA_DIR "intro_db.txt"	// Introduction database
+#define LETGAINDB_FILE	DATA_DIR "letgains.txt"  // records the letgains info
+#define QUEST_FILE		DATA_DIR "quests.txt"	// quests database
+#define OFFMOOT_FILE	DATA_DIR "offmoot.txt"	// offmoot database
+#define LOCKERS_FILE	DATA_DIR "lockers.txt"	// lockers database
+#define CORPSES_FILE	DATA_DIR "corpses.txt"	// Corpses Save database ( used in hreboot etc )
 
 // === system files
-#define CLASSES_LIST    SYSTEM_DIR"classes.txt"	// the list of all classes 
-#define SKILLS_FILE		SYSTEM_DIR"skills.txt"
-#define SKILLGROUPS_FILE SYSTEM_DIR"skgroups.txt"
+#define CLASSES_LIST    SYSTEM_DIR "classes.txt"	// the list of all classes
+#define SKILLS_FILE		SYSTEM_DIR "skills.txt"
+#define SKILLGROUPS_FILE SYSTEM_DIR "skgroups.txt"
 #define RACES_FILE		SYSTEM_DIR "races.txt"
 #define CONTINENTS_FILE	SYSTEM_DIR "continen.txt"
-#define SOCIAL_FILE		SYSTEM_DIR"socials.txt"
-#define COMMANDS_FILE				SYSTEM_DIR"commands.txt"
-#define COMMANDS_CATEGORIES_FILE	SYSTEM_DIR"com_cats.txt"
-#define COLOUR_TEMPLATES_FILE		SYSTEM_DIR"colours.txt"
-#define NAME_PROFILES_FILE			SYSTEM_DIR"namegen.txt"
-#define	DEITY_FILE		DEITY_DIR"deity.txt"	// deity list
-#define MIX_FILE		SYSTEM_DIR"mix.txt"		// mix database
-#define HERB_FILE		SYSTEM_DIR"herblist.txt"	// herb db
-#define LANGUAGES_INDEX_FILE LANGUAGES_DIR"languages.txt"	// list of all language names
+#define SOCIAL_FILE		SYSTEM_DIR "socials.txt"
+#define COMMANDS_FILE				SYSTEM_DIR "commands.txt"
+#define COMMANDS_CATEGORIES_FILE	SYSTEM_DIR "com_cats.txt"
+#define COLOUR_TEMPLATES_FILE		SYSTEM_DIR "colours.txt"
+#define NAME_PROFILES_FILE			SYSTEM_DIR "namegen.txt"
+#define	DEITY_FILE		DEITY_DIR "deity.txt"	// deity list
+#define MIX_FILE		SYSTEM_DIR "mix.txt"		// mix database
+#define HERB_FILE		SYSTEM_DIR "herblist.txt"	// herb db
+#define LANGUAGES_INDEX_FILE LANGUAGES_DIR "languages.txt"	// list of all language names
 
 // === general files
 #define DYNAMIC_INCLUDE "1dyntable.cpp"			// Dynamically written source file
-#define AREA_LIST       AREA_DIR"arealist.txt"	// List of areas
-#define HELP_LIST       HELP_DIR"helplist.txt"  // List of help files
+#define AREA_LIST       AREA_DIR "arealist.txt"	// List of areas
+#define HELP_LIST       HELP_DIR "helplist.txt"  // List of help files
 #define LASTCMD_FILE	"lastcmd.txt"
 #define TEMP_FILE       "dawntmp.txt"
-#define SCRIPTS_FILE	SCRIPTS_DIR"scripts.txt"// scripts database
+#define SCRIPTS_FILE	SCRIPTS_DIR "scripts.txt"// scripts database
 
 /*
 * Game parameters.
