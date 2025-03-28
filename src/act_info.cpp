@@ -3574,7 +3574,8 @@ void do_lore(char_data *ch, char *argument)
     int skill;
 	
     // find out what 
-    if (argument == '\0')
+    //if (argument == '\0')
+    if (argument == NULL || *argument == '\0')
     {
 		ch->println("Lore what item?");
 		return;

@@ -568,7 +568,7 @@ bool clanedit_recallroom( char_data *ch, char *argument )
 		return false;
 	}
 
-	if ( get_room_index( atoi( argument )) == '\0' )
+	if ( get_room_index( atoi( argument )) == nullptr )
 	{
 		ch->println("That room vnum doesn't exist.");
 		return false;
@@ -672,7 +672,7 @@ bool clanedit_bankroom( char_data *ch, char *argument )
 		return false;
 	}
 
-	if ( get_room_index( atoi( argument )) == '\0' )
+	if ( get_room_index( atoi( argument )) == nullptr )
 	{
 		ch->println("That room vnum doesn't exist.");
 		return false;

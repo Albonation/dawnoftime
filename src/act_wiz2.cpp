@@ -5226,8 +5226,8 @@ void do_setdeity( char_data *ch, char *argument ) // Tibault 11/07/2000
 		return;
 	}
 
-	if ( strstr(deityName, "none") != '\0' )
-	{
+    if (strstr(deityName, "none") != nullptr)
+    {
 		if ( victim->deity && victim->deity->name )
 		{
 			ch->printlnf( "`#`Y%s`^ no longer worships `W%s`^.", victim->name, victim->deity->name );

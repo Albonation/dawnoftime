@@ -764,8 +764,8 @@ bool aedit_lcomment(char_data *ch, char *argument)
 	{
 		free_string( pArea->lcomment );
         ch->println("Level comment has been cleared.");
-		pArea->lcomment = '\0';
-		return true;
+        pArea->lcomment = nullptr;
+        return true;
 	}
 
     ch->printlnf( "Level comment has been set to '%s'", comment);

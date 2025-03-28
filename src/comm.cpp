@@ -269,9 +269,9 @@ void init_reserved_files()
 #include <sys/utsname.h>
 #endif
 
-#ifdef HAVE_SYS_SYSCTL_H
+/*#ifdef HAVE_SYS_SYSCTL_H
 #include <sys/sysctl.h>
-#endif
+#endif*/
 
 /**************************************************************************/
 void display_host_info()
@@ -335,7 +335,7 @@ void display_host_info()
 					name.machine);
 			}
 		}
-#	if defined HAVE_SYS_SYSCTL_H && defined(CTL_KERN) && defined(KERN_VERSION) 
+/*#	if defined HAVE_SYS_SYSCTL_H && defined(CTL_KERN) && defined(KERN_VERSION)
 		{ // tag on the KERN_VERSION info if available
 			int mib[2];
 			size_t len;			
@@ -356,7 +356,7 @@ void display_host_info()
 				free_string(tempstring);
 			}
 		}
-#	endif
+#	endif*/
 #elif defined(__CYGWIN__)
 	strcpy(PLATFORM_INFO, "PlatformID: Cygwin.");
 #elif defined(__APPLE__) && defined(__MACH__)
@@ -1473,7 +1473,7 @@ bool read_from_connection( connection_data *c )
 void read_from_buffer( connection_data *c )
 {
     int i, j, k;
-	bool got_n, got_r;
+	int got_n, got_r;
 
     // Hold horses if pending command already.
     if( c->incomm[0] != '\0' ){

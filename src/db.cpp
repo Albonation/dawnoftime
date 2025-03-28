@@ -963,7 +963,7 @@ void import_helps( FILE *fp )
 			pHelp->text = pTrim;
 		}
 		
-		// swaps ¡ (ascii 173) for the tilde ~ (pre `- days)
+		// swaps ï¿½ (ascii 173) for the tilde ~ (pre `- days)
 		show_tilde(pHelp->text);
 		
 		// link it into the list
@@ -1094,7 +1094,7 @@ void load_area( FILE *fp, bool dawnareadata)
 	pArea->colourcode	= '{'; // old format for colour codes
 	pArea->low_level    = -1;   // undefined 
 	pArea->high_level   = -1;   // undefined 
-	pArea->lcomment     = '\0'; // undefined 
+	pArea->lcomment     = nullptr; // undefined
 	pArea->mapscale		= 0;	// undefined 
 	pArea->vnum_offset	= 0;
 	pArea->credits		= str_dup("");
@@ -4524,7 +4524,7 @@ void smash_tilde( char *str )
 
 /**************************************************************************/
 /*
- * Hides the tildes in a string with ascii code 173 (­).
+ * Hides the tildes in a string with ascii code 173 (ï¿½).
  * Used for player-entered strings that go into disk files.
  */
 void hide_tilde( char *str )
@@ -4536,7 +4536,7 @@ void hide_tilde( char *str )
     for ( ; *str; str++ )
     {
 		if ( *str == '~' ){
-			*str = '­';
+			*str = 'ï¿½';
 		}
 	}
     return;
@@ -4544,7 +4544,7 @@ void hide_tilde( char *str )
 
 /**************************************************************************/
 /*
- * Show the tildes in a string with ascii code 173 (­).
+ * Show the tildes in a string with ascii code 173 (ï¿½).
  * Used for player-entered strings that go into disk files.
  */
 void show_tilde( char *str )
@@ -4555,7 +4555,7 @@ void show_tilde( char *str )
 
     for ( ; *str; str++ )
     {
-		if ( *str == '­' ){
+		if ( *str == 'ï¿½' ){
 			*str = '~';
 		}
     }
